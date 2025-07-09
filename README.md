@@ -1,5 +1,6 @@
 # Folder-structure
 
+```
 /src
 │
 ├── pages/                            ← Route-based pages
@@ -34,3 +35,4 @@
 ├── main.tsx                          
 └── types/                            ← (Optional) Shared TypeScript types for the dependencies
     └── index.ts
+```
