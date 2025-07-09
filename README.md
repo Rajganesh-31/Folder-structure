@@ -1,1 +1,36 @@
 # Folder-structure
+
+/src
+│
+├── pages/                            ← Route-based pages
+│   ├── Home.tsx
+│   ├── Login.tsx
+│   └── Signup.tsx
+│
+├── components/                       ← Shared reusable UI Wrapper components
+│   └── ui/
+│       ├── Button.tsx
+│       ├── Input.tsx
+│       └── Loader.tsx
+│
+├── features/                         ← Feature-based slices & components
+│   └── auth/
+│       ├── authSlice.ts              ← Redux slice
+│       ├── AuthForm.tsx              ← Auth form component
+│       └── authUtils.ts              ← Optional helper functions
+│
+├── services/                         ← RTK Query API files
+│   └── authAPI.ts                    ← e.g., login, register endpoints
+│
+├── store/                            ← Redux store config
+│   ├── index.ts                      ← Combine slices, apply middleware
+│   └── rootReducer.ts                ← (Optional) Combine reducers
+│
+├── hooks/                            ← Custom reusable hooks
+│   ├── customHooks.ts                ← Custom Hooks if required
+│                                      
+│
+├── App.tsx                           ← App entry component with routing, Renders App with BrowserRouter & Provider
+├── main.tsx                          
+└── types/                            ← (Optional) Shared TypeScript types for the dependencies
+    └── index.ts
