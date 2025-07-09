@@ -24,38 +24,34 @@
 │   └── authAPI.ts                    ← e.g., login, register endpoints
 │
 ├── router/                           ← Routing logics and Browser router
-|   |                                   with lazy loading and protected routes
-│   └── router.tsx                    
-|
+│   └── router.tsx                    ← App route structure using createBrowserRouter
+│
 ├── store/                            ← Redux store config
 │   ├── index.ts                      ← Combine slices, apply middleware
 │   └── rootReducer.ts                ← (Optional) Combine reducers
 │
 ├── hooks/                            ← Custom reusable hooks
-│   ├── customHooks.ts                ← Custom Hooks if required
-│                                      
+│   └── customHooks.ts                ← Custom Hooks if required
 │
-├── App.tsx                           ← App entry point child routes with outlet
-|                                       
-|                                        
-├── main.tsx                          
-└── types/                            ← (Optional) Shared TypeScript types for 
-    |                                   the dependencies
-    └── index.ts
-
-/test                                   ← ✅ Dedicated test folder
+├── types/                            ← (Optional) Shared TypeScript types for 
+|                                       the dependencies
+│   └── index.ts
 │
-├── App.test.tsx                        ← Unit test for App.tsx
+├── App.tsx                           ← App entry for child routes with Outlet
+├── main.tsx                          ← Root renderer (RouterProvider)
+|
+├── test/                             ← Dedicated Test Folder
+│   ├── App.test.tsx                  ← Unit test for App.tsx
 │
-├── components/
-│   └── ui/
-│       ├── Button.test.tsx             ← Unit test for Button.tsx
-│       └── Loader.test.tsx             ← Unit test for Loader.tsx
+│   ├── components/
+│   │   └── ui/
+│   │       ├── Button.test.tsx       ← Unit test for Button.tsx
+│   │       └── Loader.test.tsx       ← Unit test for Loader.tsx
 │
-├── features/
-│   └── auth/
-│       └── AuthForm.test.tsx           ← Unit test for AuthForm.tsx
+│   ├── features/
+│   │   └── auth/
+│   │       └── AuthForm.test.tsx     ← Unit test for AuthForm.tsx
 │
-├── pages/
-│   └── Home.test.tsx                   ← Unit test for Home page
+│   └── pages/
+│       └── Home.test.tsx             ← Unit test for Home page
 ```
