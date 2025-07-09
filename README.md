@@ -35,9 +35,9 @@
 │   ├── customHooks.ts                ← Custom Hooks if required
 │                                      
 │
-├── App.tsx                           ← App entry component with routing,
-|                                       Renders App with BrowserRouter & 
-|                                       Provider 
+├── App.tsx                           ← App entry point child routes with outlet
+|                                       
+|                                        
 ├── main.tsx                          
 └── types/                            ← (Optional) Shared TypeScript types for 
     |                                   the dependencies
