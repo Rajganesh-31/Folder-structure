@@ -1,5 +1,5 @@
 # Folder structure
-
+## Frontend
 ```
 /src
 │
@@ -54,4 +54,40 @@
 │
 │   └── pages/
 │       └── Home.test.tsx             ← Unit test for Home page
+```
+## Backend
+
+```
+/server
+│
+├── /config               # App configuration (DB, environment, etc.)
+│   └── db.js
+│   └── env.js
+│
+├── /controllers          # Route logic and request handlers
+│   └── authController.js
+│   └── userController.js
+│
+├── /routes               # Route definitions
+│   └── authRoutes.js
+│   └── userRoutes.js
+│
+├── /services             # Reusable business logic (email, payment, etc.)
+│   └── emailService.js
+│
+├── /middlewares          # Custom Express middlewares (auth, error handling, etc.)
+│   └── authMiddleware.js
+│   └── errorMiddleware.js
+│
+├── /utils                # Utility functions (validators, logger, etc.)
+│   └── generateSitemap.js   
+│
+├── /public               # Static files (e.g., robots.txt, favicon)
+│   └── robots.txt
+│
+├── index.js                # Main Express app setup
+├── server.js               # App entry point
+├── .env
+├── package.json
+
 ```
